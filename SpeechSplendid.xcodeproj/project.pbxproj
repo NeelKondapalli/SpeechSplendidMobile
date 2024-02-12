@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9AD75C25804D6620C2FA2378 /* Pods_SpeechSplendid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E7E0B0ACE35ACBD5559AC /* Pods_SpeechSplendid.framework */; };
+		F45DB99D2AE71E9800E1F8A3 /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45DB99C2AE71E9800E1F8A3 /* CoreML.framework */; };
+		F45DB9A32AE752F100E1F8A3 /* EmotionClassifier.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = F45DB9A22AE752F100E1F8A3 /* EmotionClassifier.mlpackage */; };
+		F48095CE2ACE764B003F00E1 /* GoogleMobileAds.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48095CD2ACE764A003F00E1 /* GoogleMobileAds.xcframework */; };
+		F4BA43A32B3D526C00399F43 /* VideoCaptureManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BDEB942AC3C8C20044FFC6 /* VideoCaptureManagerDelegate.swift */; };
+		F4BDEB692AC3C4E00044FFC6 /* SpeechSplendidApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BDEB682AC3C4E00044FFC6 /* SpeechSplendidApp.swift */; };
+		F4BDEB6B2AC3C4E00044FFC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BDEB6A2AC3C4E00044FFC6 /* ContentView.swift */; };
+		F4BDEB702AC3C4E30044FFC6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4BDEB6F2AC3C4E30044FFC6 /* Preview Assets.xcassets */; };
+		F4BDEB872AC3C7640044FFC6 /* EmojiFramePairView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BDEB862AC3C7640044FFC6 /* EmojiFramePairView.swift */; };
+		F4BDEB892AC3C7690044FFC6 /* VideoCaptureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BDEB882AC3C7690044FFC6 /* VideoCaptureManager.swift */; };
+		F4BDEB8D2AC3C7750044FFC6 /* OpenAIResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BDEB8C2AC3C7750044FFC6 /* OpenAIResponseHandler.swift */; };
+		F4BDEB8F2AC3C77A0044FFC6 /* OpenAIConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BDEB8E2AC3C77A0044FFC6 /* OpenAIConnector.swift */; };
+		F4BDEB932AC3C8200044FFC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4BDEB922AC3C8200044FFC6 /* Assets.xcassets */; };
+		F4CA23AC2AE8A0380051D3CD /* AdState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CA23AB2AE8A0380051D3CD /* AdState.swift */; };
+		F4E42E9A2AE44F8700371997 /* BannerAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E42E992AE44F8700371997 /* BannerAd.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3711904EF78B617521A8FFB1 /* Pods-SpeechSplendid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechSplendid.release.xcconfig"; path = "Target Support Files/Pods-SpeechSplendid/Pods-SpeechSplendid.release.xcconfig"; sourceTree = "<group>"; };
+		EB8E7E0B0ACE35ACBD5559AC /* Pods_SpeechSplendid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeechSplendid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F45DB99C2AE71E9800E1F8A3 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
+		F45DB9A22AE752F100E1F8A3 /* EmotionClassifier.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = EmotionClassifier.mlpackage; sourceTree = "<group>"; };
+		F478E8DB2ACE7B2C003B16C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F48095CD2ACE764A003F00E1 /* GoogleMobileAds.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleMobileAds.xcframework; path = "Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework/GoogleMobileAds.xcframework"; sourceTree = "<group>"; };
+		F4BDEB652AC3C4E00044FFC6 /* SpeechSplendid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechSplendid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4BDEB682AC3C4E00044FFC6 /* SpeechSplendidApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechSplendidApp.swift; sourceTree = "<group>"; };
+		F4BDEB6A2AC3C4E00044FFC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F4BDEB6F2AC3C4E30044FFC6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F4BDEB862AC3C7640044FFC6 /* EmojiFramePairView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiFramePairView.swift; sourceTree = "<group>"; };
+		F4BDEB882AC3C7690044FFC6 /* VideoCaptureManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCaptureManager.swift; sourceTree = "<group>"; };
+		F4BDEB8C2AC3C7750044FFC6 /* OpenAIResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAIResponseHandler.swift; sourceTree = "<group>"; };
+		F4BDEB8E2AC3C77A0044FFC6 /* OpenAIConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAIConnector.swift; sourceTree = "<group>"; };
+		F4BDEB922AC3C8200044FFC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4BDEB942AC3C8C20044FFC6 /* VideoCaptureManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCaptureManagerDelegate.swift; sourceTree = "<group>"; };
+		F4CA23AB2AE8A0380051D3CD /* AdState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdState.swift; sourceTree = "<group>"; };
+		F4E42E992AE44F8700371997 /* BannerAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAd.swift; sourceTree = "<group>"; };
+		F4E42E9F2AE6FF0200371997 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
+		FF224523E7B3591A8E47E769 /* Pods-SpeechSplendid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechSplendid.debug.xcconfig"; path = "Target Support Files/Pods-SpeechSplendid/Pods-SpeechSplendid.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4BDEB622AC3C4E00044FFC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F48095CE2ACE764B003F00E1 /* GoogleMobileAds.xcframework in Frameworks */,
+				9AD75C25804D6620C2FA2378 /* Pods_SpeechSplendid.framework in Frameworks */,
+				F45DB99D2AE71E9800E1F8A3 /* CoreML.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		67C9845183E44D0C0F779AC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F45DB99C2AE71E9800E1F8A3 /* CoreML.framework */,
+				F48095CD2ACE764A003F00E1 /* GoogleMobileAds.xcframework */,
+				EB8E7E0B0ACE35ACBD5559AC /* Pods_SpeechSplendid.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		91114C9E51668C6C53182C0D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF224523E7B3591A8E47E769 /* Pods-SpeechSplendid.debug.xcconfig */,
+				3711904EF78B617521A8FFB1 /* Pods-SpeechSplendid.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F4BDEB5C2AC3C4E00044FFC6 = {
+			isa = PBXGroup;
+			children = (
+				F4BDEB672AC3C4E00044FFC6 /* SpeechSplendid */,
+				F4BDEB662AC3C4E00044FFC6 /* Products */,
+				91114C9E51668C6C53182C0D /* Pods */,
+				67C9845183E44D0C0F779AC9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F4BDEB662AC3C4E00044FFC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4BDEB652AC3C4E00044FFC6 /* SpeechSplendid.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4BDEB672AC3C4E00044FFC6 /* SpeechSplendid */ = {
+			isa = PBXGroup;
+			children = (
+				F478E8DB2ACE7B2C003B16C7 /* Info.plist */,
+				F4BDEB942AC3C8C20044FFC6 /* VideoCaptureManagerDelegate.swift */,
+				F4BDEB922AC3C8200044FFC6 /* Assets.xcassets */,
+				F4BDEB8C2AC3C7750044FFC6 /* OpenAIResponseHandler.swift */,
+				F4BDEB882AC3C7690044FFC6 /* VideoCaptureManager.swift */,
+				F45DB9A22AE752F100E1F8A3 /* EmotionClassifier.mlpackage */,
+				F4BDEB8E2AC3C77A0044FFC6 /* OpenAIConnector.swift */,
+				F4BDEB862AC3C7640044FFC6 /* EmojiFramePairView.swift */,
+				F4BDEB682AC3C4E00044FFC6 /* SpeechSplendidApp.swift */,
+				F4BDEB6A2AC3C4E00044FFC6 /* ContentView.swift */,
+				F4BDEB6E2AC3C4E30044FFC6 /* Preview Content */,
+				F4E42E992AE44F8700371997 /* BannerAd.swift */,
+				F4E42E9F2AE6FF0200371997 /* Secrets.xcconfig */,
+				F4CA23AB2AE8A0380051D3CD /* AdState.swift */,
+			);
+			path = SpeechSplendid;
+			sourceTree = "<group>";
+		};
+		F4BDEB6E2AC3C4E30044FFC6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F4BDEB6F2AC3C4E30044FFC6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4BDEB642AC3C4E00044FFC6 /* SpeechSplendid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4BDEB732AC3C4E30044FFC6 /* Build configuration list for PBXNativeTarget "SpeechSplendid" */;
+			buildPhases = (
+				C17854D59B0E8E69B445A948 /* [CP] Check Pods Manifest.lock */,
+				F4BDEB612AC3C4E00044FFC6 /* Sources */,
+				F4BDEB622AC3C4E00044FFC6 /* Frameworks */,
+				F4BDEB632AC3C4E00044FFC6 /* Resources */,
+				138942412F4AA2C21BE39A88 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpeechSplendid;
+			productName = SpeechSplendid;
+			productReference = F4BDEB652AC3C4E00044FFC6 /* SpeechSplendid.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4BDEB5D2AC3C4E00044FFC6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					F4BDEB642AC3C4E00044FFC6 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = F4BDEB602AC3C4E00044FFC6 /* Build configuration list for PBXProject "SpeechSplendid" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4BDEB5C2AC3C4E00044FFC6;
+			productRefGroup = F4BDEB662AC3C4E00044FFC6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4BDEB642AC3C4E00044FFC6 /* SpeechSplendid */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4BDEB632AC3C4E00044FFC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4BDEB702AC3C4E30044FFC6 /* Preview Assets.xcassets in Resources */,
+				F4BDEB932AC3C8200044FFC6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		138942412F4AA2C21BE39A88 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpeechSplendid/Pods-SpeechSplendid-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpeechSplendid/Pods-SpeechSplendid-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpeechSplendid/Pods-SpeechSplendid-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C17854D59B0E8E69B445A948 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpeechSplendid-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4BDEB612AC3C4E00044FFC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4BDEB6B2AC3C4E00044FFC6 /* ContentView.swift in Sources */,
+				F4E42E9A2AE44F8700371997 /* BannerAd.swift in Sources */,
+				F4BDEB892AC3C7690044FFC6 /* VideoCaptureManager.swift in Sources */,
+				F4BDEB872AC3C7640044FFC6 /* EmojiFramePairView.swift in Sources */,
+				F4BDEB8D2AC3C7750044FFC6 /* OpenAIResponseHandler.swift in Sources */,
+				F4BA43A32B3D526C00399F43 /* VideoCaptureManagerDelegate.swift in Sources */,
+				F45DB9A32AE752F100E1F8A3 /* EmotionClassifier.mlpackage in Sources */,
+				F4BDEB692AC3C4E00044FFC6 /* SpeechSplendidApp.swift in Sources */,
+				F4BDEB8F2AC3C77A0044FFC6 /* OpenAIConnector.swift in Sources */,
+				F4CA23AC2AE8A0380051D3CD /* AdState.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F4BDEB712AC3C4E30044FFC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4E42E9F2AE6FF0200371997 /* Secrets.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F4BDEB722AC3C4E30044FFC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4E42E9F2AE6FF0200371997 /* Secrets.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4BDEB742AC3C4E30044FFC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF224523E7B3591A8E47E769 /* Pods-SpeechSplendid.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.2;
+				DEVELOPMENT_ASSET_PATHS = "\"SpeechSplendid/Preview Content\"";
+				DEVELOPMENT_TEAM = BMF62ZB494;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpeechSplendid/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SpeechSplendid;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "This app uses speech recognition to transcribe spoken words into text for speech analysis and feedback.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neelkondapalli.SpeechSplendid;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F4BDEB752AC3C4E30044FFC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3711904EF78B617521A8FFB1 /* Pods-SpeechSplendid.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.2;
+				DEVELOPMENT_ASSET_PATHS = "\"SpeechSplendid/Preview Content\"";
+				DEVELOPMENT_TEAM = BMF62ZB494;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpeechSplendid/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SpeechSplendid;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "This app uses speech recognition to transcribe spoken words into text for speech analysis and feedback.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neelkondapalli.SpeechSplendid;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4BDEB602AC3C4E00044FFC6 /* Build configuration list for PBXProject "SpeechSplendid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4BDEB712AC3C4E30044FFC6 /* Debug */,
+				F4BDEB722AC3C4E30044FFC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4BDEB732AC3C4E30044FFC6 /* Build configuration list for PBXNativeTarget "SpeechSplendid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4BDEB742AC3C4E30044FFC6 /* Debug */,
+				F4BDEB752AC3C4E30044FFC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4BDEB5D2AC3C4E00044FFC6 /* Project object */;
+}
