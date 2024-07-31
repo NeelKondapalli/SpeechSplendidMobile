@@ -1,0 +1,21 @@
+Pods/
+Secrets.plist
+
+.DS_Store
+*.swp
+xcuserdata/
+DerivedData/
+
+/build/
+*.xcodeproj/xcuserdata/
+
+# User-specific Xcode settings
+*.xcuserdatad
+xcuserdata/
+
+build/
+DerivedData/
+
+Config.xcconfig
+
+*.xcuserstate

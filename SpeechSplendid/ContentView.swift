@@ -741,18 +741,18 @@ struct ContentView: View {
                         .frame(minWidth: 0, maxWidth: .infinity)
                         .NeumorphicStyle()
 
-//                         if let adID2 = TEST_ID, !adID2.isEmpty {
-//                             if adState.adLoadedSuccessfully {
-//                                 BannerAd(adState: adState, unitID: adID2).frame(height: 100)
-//                             }
-//                         }
-
-                         if let adID2 = BANNER2_ID, !adID2.isEmpty {
+                         if let adID2 = TEST_ID, !adID2.isEmpty {
                              if adState.adLoadedSuccessfully {
                                  BannerAd(adState: adState, unitID: adID2).frame(height: 100)
-
                              }
                          }
+
+//                         if let adID2 = BANNER2_ID, !adID2.isEmpty {
+//                             if adState.adLoadedSuccessfully {
+//                                 BannerAd(adState: adState, unitID: adID2).frame(height: 100)
+//
+//                             }
+//                         }
 
                     }
                     .padding()
@@ -958,23 +958,6 @@ struct VideoPicker: UIViewControllerRepresentable {
         init(_ parent: VideoPicker) {
             self.parent = parent
         }
-
-//        func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-//            print("Checking")
-//            if let videoURL = info[.mediaURL] as? URL {
-//                            // Check the file size of the selected video
-//               if let fileSize = getFileSize(atURL: videoURL), fileSize <= 30 * 1024 * 1024 /* 60 MB */ {
-//                   print("File: \(fileSize)")
-//                   parent.selectedVideoURL = videoURL
-//               } else {
-//                                // Video is too large, present an alert
-//                   print("vid too large")
-//                   parent.isVideoTooLargeAlertPresented = true
-//               }
-//             }
-//
-//             picker.dismiss(animated: true, completion: nil)
-//        }
         
         func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
             //print("Checking")

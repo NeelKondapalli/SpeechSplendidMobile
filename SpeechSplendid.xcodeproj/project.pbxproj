@@ -43,7 +43,6 @@
 		F4BDEB942AC3C8C20044FFC6 /* VideoCaptureManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCaptureManagerDelegate.swift; sourceTree = "<group>"; };
 		F4CA23AB2AE8A0380051D3CD /* AdState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdState.swift; sourceTree = "<group>"; };
 		F4E42E992AE44F8700371997 /* BannerAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAd.swift; sourceTree = "<group>"; };
-		F4E42E9F2AE6FF0200371997 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 		FF224523E7B3591A8E47E769 /* Pods-SpeechSplendid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechSplendid.debug.xcconfig"; path = "Target Support Files/Pods-SpeechSplendid/Pods-SpeechSplendid.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,7 +112,6 @@
 				F4BDEB6A2AC3C4E00044FFC6 /* ContentView.swift */,
 				F4BDEB6E2AC3C4E30044FFC6 /* Preview Content */,
 				F4E42E992AE44F8700371997 /* BannerAd.swift */,
-				F4E42E9F2AE6FF0200371997 /* Secrets.xcconfig */,
 				F4CA23AB2AE8A0380051D3CD /* AdState.swift */,
 			);
 			path = SpeechSplendid;
@@ -259,7 +257,6 @@
 /* Begin XCBuildConfiguration section */
 		F4BDEB712AC3C4E30044FFC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4E42E9F2AE6FF0200371997 /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -320,7 +317,6 @@
 		};
 		F4BDEB722AC3C4E30044FFC6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4E42E9F2AE6FF0200371997 /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
