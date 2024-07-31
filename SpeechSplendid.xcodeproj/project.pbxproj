@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D0F90C653616B082F25D0D3 /* Pods_SpeechSplendid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54290047E59AC6B3443A9D20 /* Pods_SpeechSplendid.framework */; };
 		3BB703122C5A3BFA00F98FED /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3BB703112C5A3BFA00F98FED /* Config.xcconfig */; };
+		3BB703142C5A470C00F98FED /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3BB703132C5A470C00F98FED /* README.md */; };
 		F45DB99D2AE71E9800E1F8A3 /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45DB99C2AE71E9800E1F8A3 /* CoreML.framework */; };
 		F45DB9A32AE752F100E1F8A3 /* EmotionClassifier.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = F45DB9A22AE752F100E1F8A3 /* EmotionClassifier.mlpackage */; };
 		F48095CE2ACE764B003F00E1 /* GoogleMobileAds.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48095CD2ACE764A003F00E1 /* GoogleMobileAds.xcframework */; };
@@ -26,6 +28,10 @@
 
 /* Begin PBXFileReference section */
 		3BB703112C5A3BFA00F98FED /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		3BB703132C5A470C00F98FED /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		48C7269316A8384874939A4F /* Pods-SpeechSplendid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechSplendid.debug.xcconfig"; path = "Target Support Files/Pods-SpeechSplendid/Pods-SpeechSplendid.debug.xcconfig"; sourceTree = "<group>"; };
+		54290047E59AC6B3443A9D20 /* Pods_SpeechSplendid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeechSplendid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6332708BDFA36B0F85214319 /* Pods-SpeechSplendid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechSplendid.release.xcconfig"; path = "Target Support Files/Pods-SpeechSplendid/Pods-SpeechSplendid.release.xcconfig"; sourceTree = "<group>"; };
 		F45DB99C2AE71E9800E1F8A3 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
 		F45DB9A22AE752F100E1F8A3 /* EmotionClassifier.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = EmotionClassifier.mlpackage; sourceTree = "<group>"; };
 		F478E8DB2ACE7B2C003B16C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +57,7 @@
 			files = (
 				F48095CE2ACE764B003F00E1 /* GoogleMobileAds.xcframework in Frameworks */,
 				F45DB99D2AE71E9800E1F8A3 /* CoreML.framework in Frameworks */,
+				2D0F90C653616B082F25D0D3 /* Pods_SpeechSplendid.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +69,7 @@
 			children = (
 				F45DB99C2AE71E9800E1F8A3 /* CoreML.framework */,
 				F48095CD2ACE764A003F00E1 /* GoogleMobileAds.xcframework */,
+				54290047E59AC6B3443A9D20 /* Pods_SpeechSplendid.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -69,6 +77,8 @@
 		91114C9E51668C6C53182C0D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				48C7269316A8384874939A4F /* Pods-SpeechSplendid.debug.xcconfig */,
+				6332708BDFA36B0F85214319 /* Pods-SpeechSplendid.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -76,6 +86,7 @@
 		F4BDEB5C2AC3C4E00044FFC6 = {
 			isa = PBXGroup;
 			children = (
+				3BB703132C5A470C00F98FED /* README.md */,
 				F4BDEB672AC3C4E00044FFC6 /* SpeechSplendid */,
 				F4BDEB662AC3C4E00044FFC6 /* Products */,
 				91114C9E51668C6C53182C0D /* Pods */,
@@ -127,9 +138,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4BDEB732AC3C4E30044FFC6 /* Build configuration list for PBXNativeTarget "SpeechSplendid" */;
 			buildPhases = (
+				A8AD26158EDFF2897D4991AD /* [CP] Check Pods Manifest.lock */,
 				F4BDEB612AC3C4E00044FFC6 /* Sources */,
 				F4BDEB622AC3C4E00044FFC6 /* Frameworks */,
 				F4BDEB632AC3C4E00044FFC6 /* Resources */,
+				F7C0804B97BDE3E938019260 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -180,11 +193,54 @@
 			files = (
 				F4BDEB702AC3C4E30044FFC6 /* Preview Assets.xcassets in Resources */,
 				3BB703122C5A3BFA00F98FED /* Config.xcconfig in Resources */,
+				3BB703142C5A470C00F98FED /* README.md in Resources */,
 				F4BDEB932AC3C8200044FFC6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A8AD26158EDFF2897D4991AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpeechSplendid-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7C0804B97BDE3E938019260 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpeechSplendid/Pods-SpeechSplendid-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpeechSplendid/Pods-SpeechSplendid-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpeechSplendid/Pods-SpeechSplendid-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F4BDEB612AC3C4E00044FFC6 /* Sources */ = {
@@ -325,6 +381,7 @@
 		};
 		F4BDEB742AC3C4E30044FFC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48C7269316A8384874939A4F /* Pods-SpeechSplendid.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -366,6 +423,7 @@
 		};
 		F4BDEB752AC3C4E30044FFC6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6332708BDFA36B0F85214319 /* Pods-SpeechSplendid.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
