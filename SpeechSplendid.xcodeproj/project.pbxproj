@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3BB703122C5A3BFA00F98FED /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3BB703112C5A3BFA00F98FED /* Config.xcconfig */; };
-		9AD75C25804D6620C2FA2378 /* Pods_SpeechSplendid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E7E0B0ACE35ACBD5559AC /* Pods_SpeechSplendid.framework */; };
 		F45DB99D2AE71E9800E1F8A3 /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45DB99C2AE71E9800E1F8A3 /* CoreML.framework */; };
 		F45DB9A32AE752F100E1F8A3 /* EmotionClassifier.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = F45DB9A22AE752F100E1F8A3 /* EmotionClassifier.mlpackage */; };
 		F48095CE2ACE764B003F00E1 /* GoogleMobileAds.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48095CD2ACE764A003F00E1 /* GoogleMobileAds.xcframework */; };
@@ -26,9 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3711904EF78B617521A8FFB1 /* Pods-SpeechSplendid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechSplendid.release.xcconfig"; path = "Target Support Files/Pods-SpeechSplendid/Pods-SpeechSplendid.release.xcconfig"; sourceTree = "<group>"; };
 		3BB703112C5A3BFA00F98FED /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
-		EB8E7E0B0ACE35ACBD5559AC /* Pods_SpeechSplendid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeechSplendid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F45DB99C2AE71E9800E1F8A3 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
 		F45DB9A22AE752F100E1F8A3 /* EmotionClassifier.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = EmotionClassifier.mlpackage; sourceTree = "<group>"; };
 		F478E8DB2ACE7B2C003B16C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -45,7 +42,6 @@
 		F4BDEB942AC3C8C20044FFC6 /* VideoCaptureManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCaptureManagerDelegate.swift; sourceTree = "<group>"; };
 		F4CA23AB2AE8A0380051D3CD /* AdState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdState.swift; sourceTree = "<group>"; };
 		F4E42E992AE44F8700371997 /* BannerAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAd.swift; sourceTree = "<group>"; };
-		FF224523E7B3591A8E47E769 /* Pods-SpeechSplendid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechSplendid.debug.xcconfig"; path = "Target Support Files/Pods-SpeechSplendid/Pods-SpeechSplendid.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +50,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F48095CE2ACE764B003F00E1 /* GoogleMobileAds.xcframework in Frameworks */,
-				9AD75C25804D6620C2FA2378 /* Pods_SpeechSplendid.framework in Frameworks */,
 				F45DB99D2AE71E9800E1F8A3 /* CoreML.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,7 +62,6 @@
 			children = (
 				F45DB99C2AE71E9800E1F8A3 /* CoreML.framework */,
 				F48095CD2ACE764A003F00E1 /* GoogleMobileAds.xcframework */,
-				EB8E7E0B0ACE35ACBD5559AC /* Pods_SpeechSplendid.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -75,8 +69,6 @@
 		91114C9E51668C6C53182C0D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FF224523E7B3591A8E47E769 /* Pods-SpeechSplendid.debug.xcconfig */,
-				3711904EF78B617521A8FFB1 /* Pods-SpeechSplendid.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -135,11 +127,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4BDEB732AC3C4E30044FFC6 /* Build configuration list for PBXNativeTarget "SpeechSplendid" */;
 			buildPhases = (
-				C17854D59B0E8E69B445A948 /* [CP] Check Pods Manifest.lock */,
 				F4BDEB612AC3C4E00044FFC6 /* Sources */,
 				F4BDEB622AC3C4E00044FFC6 /* Frameworks */,
 				F4BDEB632AC3C4E00044FFC6 /* Resources */,
-				138942412F4AA2C21BE39A88 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,48 +185,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		138942412F4AA2C21BE39A88 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SpeechSplendid/Pods-SpeechSplendid-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SpeechSplendid/Pods-SpeechSplendid-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpeechSplendid/Pods-SpeechSplendid-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C17854D59B0E8E69B445A948 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SpeechSplendid-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F4BDEB612AC3C4E00044FFC6 /* Sources */ = {
@@ -377,13 +325,12 @@
 		};
 		F4BDEB742AC3C4E30044FFC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF224523E7B3591A8E47E769 /* Pods-SpeechSplendid.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SpeechSplendid/Preview Content\"";
 				DEVELOPMENT_TEAM = BMF62ZB494;
 				ENABLE_PREVIEWS = YES;
@@ -405,7 +352,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.neelkondapalli.SpeechSplendid;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -419,13 +366,12 @@
 		};
 		F4BDEB752AC3C4E30044FFC6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3711904EF78B617521A8FFB1 /* Pods-SpeechSplendid.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SpeechSplendid/Preview Content\"";
 				DEVELOPMENT_TEAM = BMF62ZB494;
 				ENABLE_PREVIEWS = YES;
@@ -447,7 +393,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.neelkondapalli.SpeechSplendid;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
