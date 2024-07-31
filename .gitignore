@@ -17,5 +17,6 @@ build/
 DerivedData/
 
 Config.xcconfig
+Secrets.xcconfig
 
 *.xcuserstate

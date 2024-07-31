@@ -13,7 +13,6 @@ struct ContentView: View {
     @EnvironmentObject var appData: AppData
     @ObservedObject var adState = AdState()
     //@StateObject var appData = AppData()
-    private var BANNER1_ID: String? = ""
     private var BANNER2_ID: String? = ""
     private var TEST_ID: String? = ""
    // @Environment(\.colorScheme) var colorScheme
@@ -63,16 +62,7 @@ struct ContentView: View {
     }
 
     init() {
-        let ad1 = Bundle.main.object(forInfoDictionaryKey: "BANNER1_ID") as? String
-
-        // Check if the key is not nil and not empty
-        if let testad = ad1, !testad.isEmpty {
-            // The key is valid, you can use it here
-            self.BANNER1_ID = testad
-        } else {
-            // Handle the case where the key is missing or empty
-            print("API key does not exist or is empty")
-        }
+    
         
         let ad2 = Bundle.main.object(forInfoDictionaryKey: "BANNER2_ID") as? String
 
@@ -741,18 +731,18 @@ struct ContentView: View {
                         .frame(minWidth: 0, maxWidth: .infinity)
                         .NeumorphicStyle()
 
-                         if let adID2 = TEST_ID, !adID2.isEmpty {
-                             if adState.adLoadedSuccessfully {
-                                 BannerAd(adState: adState, unitID: adID2).frame(height: 100)
-                             }
-                         }
-
-//                         if let adID2 = BANNER2_ID, !adID2.isEmpty {
+//                         if let adID2 = TEST_ID, !adID2.isEmpty {
 //                             if adState.adLoadedSuccessfully {
 //                                 BannerAd(adState: adState, unitID: adID2).frame(height: 100)
-//
 //                             }
 //                         }
+
+                         if let adID2 = BANNER2_ID, !adID2.isEmpty {
+                             if adState.adLoadedSuccessfully {
+                                 BannerAd(adState: adState, unitID: adID2).frame(height: 100)
+
+                             }
+                         }
 
                     }
                     .padding()

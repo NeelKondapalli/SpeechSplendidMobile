@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BB703122C5A3BFA00F98FED /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3BB703112C5A3BFA00F98FED /* Config.xcconfig */; };
 		9AD75C25804D6620C2FA2378 /* Pods_SpeechSplendid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E7E0B0ACE35ACBD5559AC /* Pods_SpeechSplendid.framework */; };
 		F45DB99D2AE71E9800E1F8A3 /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45DB99C2AE71E9800E1F8A3 /* CoreML.framework */; };
 		F45DB9A32AE752F100E1F8A3 /* EmotionClassifier.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = F45DB9A22AE752F100E1F8A3 /* EmotionClassifier.mlpackage */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		3711904EF78B617521A8FFB1 /* Pods-SpeechSplendid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechSplendid.release.xcconfig"; path = "Target Support Files/Pods-SpeechSplendid/Pods-SpeechSplendid.release.xcconfig"; sourceTree = "<group>"; };
+		3BB703112C5A3BFA00F98FED /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		EB8E7E0B0ACE35ACBD5559AC /* Pods_SpeechSplendid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeechSplendid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F45DB99C2AE71E9800E1F8A3 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
 		F45DB9A22AE752F100E1F8A3 /* EmotionClassifier.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = EmotionClassifier.mlpackage; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				F4BDEB6E2AC3C4E30044FFC6 /* Preview Content */,
 				F4E42E992AE44F8700371997 /* BannerAd.swift */,
 				F4CA23AB2AE8A0380051D3CD /* AdState.swift */,
+				3BB703112C5A3BFA00F98FED /* Config.xcconfig */,
 			);
 			path = SpeechSplendid;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4BDEB702AC3C4E30044FFC6 /* Preview Assets.xcassets in Resources */,
+				3BB703122C5A3BFA00F98FED /* Config.xcconfig in Resources */,
 				F4BDEB932AC3C8200044FFC6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +261,7 @@
 /* Begin XCBuildConfiguration section */
 		F4BDEB712AC3C4E30044FFC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BB703112C5A3BFA00F98FED /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -317,6 +322,7 @@
 		};
 		F4BDEB722AC3C4E30044FFC6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BB703112C5A3BFA00F98FED /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
